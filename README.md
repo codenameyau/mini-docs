@@ -5,7 +5,8 @@ mini-docs
 
 - [Python Example](#python-example)
 - [Ruby Example](#ruby-example)
-- [C Example](#javascript-example)
+- [C Example](#c-example)
+- [Scheme Example](#scheme-example)
 - [General Guidelines](#general-guidelines)
 
 ##Python Example
@@ -72,13 +73,28 @@ mini-docs
 ##C Example
 ```c
 
+    // Public: sum(int first, int first) -> int
+    // Computes the sum of first and second
+    //
+    // Example:
+    // sum(2, 4) => 6
     int sum(int first, int second) {
-        // Public: Computes the sum of first and second
-        //
-        // Example:
-        // sum(2, 4) => 6
         return(first + second);
     }
+
+```
+
+##Scheme Example
+```scheme
+
+    ;; Public: (Integer Integer) -> Integer
+    ;; Returns the sum of first and second
+    ;;
+    ;; Example:
+    ;; > (sum-numbers 4 5)
+    ;; 9
+    (define (sum-numbers first second)
+      (+ first second))
 
 ```
 
@@ -98,14 +114,17 @@ mini-docs
 
 ```
 
-1. For the function name and arguments, spell out words or use acronyms.
+1. Each of the examples above have slight variations, but the overall goal is to clearly and succinctly describe the function's usage in a human readable format.
+
+2. For the function name and arguments, spell out words or use acronyms.
     - For the function name, consider starting with a verb (ex. `add_numbers`, `send_request`)
 
-2. FUNCTION_USAGE:
+3. FUNCTION_USAGE:
     - Choose: Public, Internal, Private, DEPRECATED
 
-3. FUNCTION_DESCRIPTION:
+4. FUNCTION_DESCRIPTION:
     - Briefly describe what the function accomplishes. If your description is too long, consider splitting the function into smaller functions.
 
-4. EXAMPLE:
+5. EXAMPLE:
     - Include an example if the FUNCTION_USAGE is Public. Otherwise examples are optional.
+
