@@ -5,6 +5,7 @@ mini-docs
 
 - [Python Example](#python-example)
 - [Ruby Example](#ruby-example)
+- [C Example](#javascript-example)
 - [General Guidelines](#general-guidelines)
 
 ##Python Example
@@ -60,11 +61,24 @@ mini-docs
     # Returns the sum of first and second
     #
     # Example:
-    # >> sum(first, second)
+    # >> sum(10, 30)
     # => 40
     def sum(a, b)
-        return first+second
+        return first + second
     end
+
+```
+
+##C Example
+```c
+
+    int sum(int first, int second) {
+        // Public: Computes the sum of first and second
+        //
+        // Example:
+        // sum(2, 4) => 6
+        return(first + second);
+    }
 
 ```
 
@@ -80,18 +94,18 @@ mini-docs
 
         EXAMPLE:
         """
+        ...
 
 ```
 
 1. For the function name and arguments, spell out words or use acronyms.
-    - Verb of what the function accomplishes a task (ex. `add_numbers`, `send_request`)
+    - For the function name, consider starting with a verb (ex. `add_numbers`, `send_request`)
 
 2. FUNCTION_USAGE:
     - Choose: Public, Internal, Private, DEPRECATED
 
 3. FUNCTION_DESCRIPTION:
-    - Give a brief description of what the function accomplishes. If you can't be brief, consider splitting the function into smaller functions.
+    - Briefly describe what the function accomplishes. If your description is too long, consider splitting the function into smaller functions.
 
 4. EXAMPLE:
-    - Mandatory if FUNCTION_USAGE is public. Otherwise optional.
-
+    - Include an example if the FUNCTION_USAGE is Public. Otherwise examples are optional.
