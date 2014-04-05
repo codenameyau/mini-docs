@@ -19,8 +19,7 @@ mini-docs
         Returns the sum of first and second.
 
         Example:
-        >>> add_two_numbers(2, 2)
-        >>> 4
+        >> add_two_numbers(2, 2) => 4
         """
         pass
 
@@ -62,8 +61,7 @@ mini-docs
     # Returns the sum of first and second
     #
     # Example:
-    # >> sum(10, 30)
-    # => 40
+    # >> sum(10, 30) => 40
     def sum(a, b)
         return first + second
     end
@@ -77,7 +75,7 @@ mini-docs
     // Computes the sum of first and second
     //
     // Example:
-    // sum(2, 4) => 6
+    // >> sum(2, 4) => 6
     int sum(int first, int second) {
         return(first + second);
     }
@@ -91,8 +89,7 @@ mini-docs
     ;; Returns the sum of first and second
     ;;
     ;; Example:
-    ;; > (sum-numbers 4 5)
-    ;; 9
+    ;; >> (sum-numbers 4 5) => 9
     (define (sum-numbers first second)
       (+ first second))
 
