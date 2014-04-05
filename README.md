@@ -1,10 +1,9 @@
 mini-docs
 =========
 
-###Minimal Docstrings
+###Minimal Docstrings Convention
 
 - [Python](#python-example)
-- [JavaScript](#javascript-example)
 - [General Guidelines](#general-guidelines)
 
 ##Python Example
@@ -53,12 +52,11 @@ mini-docs
 
 ```
 
-
 ##General Guidelines
 
 ```
 
-    function descriptive_name(argument_1, argument_2)
+    def descriptive_name(argument_1, argument_2):
         """
         FUNCTION_USAGE: (type of argument_1, ...) -> return type
 
@@ -70,17 +68,14 @@ mini-docs
 ```
 
 1. For the function name and arguments, spell out words or use acronyms.
+    - Start with a verb if the function accomplishes a task (ex. `add_numbers`, `send_request`)
 
 2. FUNCTION_USAGE:
-
     - Choose: Public, Internal, Private, DEPRECATED
 
 3. FUNCTION_DESCRIPTION:
-
     - Give a brief description of what the function accomplishes. If you can't be brief, consider splitting the function into smaller functions.
 
 4. EXAMPLE:
-
-    - Mandatory for Public usuage. Otherwise example is optional.
-
+    - Mandatory if FUNCTION_USAGE is public. Otherwise optional.
 
