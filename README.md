@@ -1,0 +1,4 @@
+mini-docs
+=========
+
+Minimal Docstrings
