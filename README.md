@@ -3,7 +3,8 @@ mini-docs
 
 ###Minimal Docstrings Convention
 
-- [Python](#python-example)
+- [Python Example](#python-example)
+- [Ruby Example](#ruby-example)
 - [General Guidelines](#general-guidelines)
 
 ##Python Example
@@ -44,11 +45,26 @@ mini-docs
         """
         DEPRECATED: (Integer, Integer) -> Integer
 
-        ! Use is_number_in_list() instead.
+        ! Use add_two_numbers() instead.
 
         Adds the two numbers.
         """
         pass
+
+```
+
+##Ruby Example
+```ruby
+
+    # Public: sum(Integer, Integer) -> Integer
+    # Returns the sum of first and second
+    #
+    # Example:
+    # >> sum(first, second)
+    # => 40
+    def sum(a, b)
+        return first+second
+    end
 
 ```
 
@@ -68,7 +84,7 @@ mini-docs
 ```
 
 1. For the function name and arguments, spell out words or use acronyms.
-    - Start with a verb if the function accomplishes a task (ex. `add_numbers`, `send_request`)
+    - Verb of what the function accomplishes a task (ex. `add_numbers`, `send_request`)
 
 2. FUNCTION_USAGE:
     - Choose: Public, Internal, Private, DEPRECATED
