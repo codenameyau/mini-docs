@@ -3,36 +3,11 @@ mini-docs
 
 ###Minimal Docstrings
 
-####General Guidelines
+- [Python](#python-example)
+- [JavaScript](#javascript-example)
+- [General Guidelines](#general-guidelines)
 
-```
-
-    function descriptive_name(argument_1, argument_2)
-        """
-        FUNCTION_USAGE: (type of argument_1, ...) -> return type
-
-        FUNCTION_DESCRIPTION
-
-        EXAMPLE:
-        """
-
-```
-For the function name and arguments, spell out words or use acronyms.
-
-#####FUNCTION_USAGE:
-
-- Choose: Public, Internal, Private, DEPRECATED
-
-#####FUNCTION_DESCRIPTION:
-
-- Give a brief description of what the function accomplishes. If you can't be brief, consider splitting the function into smaller functions.
-
-#####EXAMPLE:
-
-- Include example for Public function usuage. Otherwise providing an example is optional.
-
-
-###Python Example
+##Python Example
 ```python
 
     def add_two_numbers(first, second):
@@ -77,3 +52,35 @@ For the function name and arguments, spell out words or use acronyms.
         pass
 
 ```
+
+
+##General Guidelines
+
+```
+
+    function descriptive_name(argument_1, argument_2)
+        """
+        FUNCTION_USAGE: (type of argument_1, ...) -> return type
+
+        FUNCTION_DESCRIPTION
+
+        EXAMPLE:
+        """
+
+```
+
+1. For the function name and arguments, spell out words or use acronyms.
+
+2. FUNCTION_USAGE:
+
+    - Choose: Public, Internal, Private, DEPRECATED
+
+3. FUNCTION_DESCRIPTION:
+
+    - Give a brief description of what the function accomplishes. If you can't be brief, consider splitting the function into smaller functions.
+
+4. EXAMPLE:
+
+    - Mandatory for Public usuage. Otherwise example is optional.
+
+
